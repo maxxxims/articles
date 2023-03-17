@@ -19,7 +19,7 @@ def get_context() -> dict:
 @mainpage.route("/")
 def index():
     context = get_context()
-    return render_template('index.html', **context)
+    return render_template('index2.html', **context)
 
 
 @mainpage.route("/predict_category", methods=["POST"])

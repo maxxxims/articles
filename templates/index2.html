@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+
+        :root {
+            --height-header: 85vh;
+        }
+
+        .header-container{
+            background: rgb(0, 94, 130);
+            height: var(--height-header);
+ 	        /* background:linear-gradient(180deg, #005e82 10%,  #fff); */
+           
+        }
+
+        .header-photo{
+            z-index:1;
+            position: relative;
+            overflow:hidden;
+            height: var(--height-header);
+        }
+ 
+        .header-photo:before{
+            z-index:-1;
+            position: absolute;
+            width: 100%;
+            content: url('../static/assets/img/bg.png');
+            text-align: center;
+            opacity: 0.4;
+            height: var(--height-header);
+            
+        }
+        
+        #text{
+            color: white;
+        }
+
+    </style>
+            <!-- /*  Структура:  */   -->
+        
+      
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Trump</title>
+    <!-- Favicon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="icon" type="image/x-icon" href=" {{ url_for('static', filename='assets/favicon.ico')}}" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{{ url_for('static', filename='css/styles2.css')}}" rel="stylesheet" />
+
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <img class="masthead-logo" width="50" height="50"
+                src="{{ url_for('static', filename='assets/img/portfolio/log.png')}}" alt="..." />
+            <a class="navbar-brand" href="#page-top" style="margin-left: 10px">TRUMP</a>
+
+            
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Go
+                            up</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">By
+                            text</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">By
+                            link</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center">
+
+
+
+            <div class="col-lg-8">
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <h1 class="masthead-heading text-uppercase mb-0">Trump</h1>
+                </div> -->
+
+                <!-- Icon Divider-->
+                <!-- <div class="divider-custom divider-light">
+                      <div class="divider-custom-line"></div>
+                      <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                      <div class="divider-custom-line"></div>
+                  </div> -->
+
+                <!-- <div class="divider-custom">
+                      <div class="divider-custom-line"></div>
+                      <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                      <div class="divider-custom-line"></div>
+                  </div> -->
+
+                <!-- Masthead Subheading-->
+                <!-- <div style="text-align: left; font-size: large; width: 87%;">
+                    <span>
+                        Uncover the truth behind the headlines with our cutting-edge technological platform Trump.
+                    </span>
+                    <p>
+                        Trump detects the political leaning of news articles and media outlets and revolutionizes the way how we approach media profiling.
+                    </p>
+
+                      -->
+
+ 
+                    <!-- <p class="masthead-subheading font-weight-light mb-0">
+
+                        <em class="masthead-subheading font-weight-light mb-0">Uncover the truth behind the headlines with our cutting-edge technology platform Trump.
+                        </em>
+
+                    </p>
+                    <p class="masthead-subheading font-weight-light"> <em>
+                            Trump detects the political leaning of news articles and media outlets, and revolutionizes
+                            the way we approach media profiling.
+                        </em>
+                    </p> -->
+
+                <!-- </div> -->
+
+<!-- 
+            </div>
+            <div class="col-md-2"> -->
+                <!-- <img class="masthead-avatar mb-5" src="assets/img/portfolio/article.svg" alt="..." /> -->
+                <!-- <img class="masthead-avatar mb-5" src="{{ url_for('static', filename='assets/img/portfolio/2.png')}}"
+                    alt="..." style="border-bottom-left-radius: 50px;" /> -->
+            <!-- </div>
+
+
+        </div>
+    </header> -->
+    <div class="header-container">
+        
+    <div class="header-photo">
+
+    
+    
+    <div class="masthead text-white text-center" >
+        <div class="container d-flex align-items-center" >
+
+
+
+            <div class="col-lg-12">
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <h1 class="masthead-heading text-uppercase mb-0" id="text">Trump</h1>
+                </div>
+
+                <!-- Icon Divider-->
+                <!-- <div class="divider-custom divider-light">
+                      <div class="divider-custom-line"></div>
+                      <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                      <div class="divider-custom-line"></div>
+                  </div> -->
+
+                <!-- <div class="divider-custom">
+                      <div class="divider-custom-line"></div>
+                      <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                      <div class="divider-custom-line"></div>
+                  </div> -->
+
+                <!-- Masthead Subheading-->
+                <div style="text-align: center; font-size: 155%;" id="text">
+                    <span>
+                        Uncover the truth behind the headlines with our cutting-edge technological platform Trump.
+                    </span>
+                    <p>
+                        Trump detects the political leaning of news articles and media outlets and revolutionizes the way how we approach media profiling.
+                    </p>
+
+                     
+
+ 
+                    <!-- <p class="masthead-subheading font-weight-light mb-0">
+
+                        <em class="masthead-subheading font-weight-light mb-0">Uncover the truth behind the headlines with our cutting-edge technology platform Trump.
+                        </em>
+
+                    </p>
+                    <p class="masthead-subheading font-weight-light"> <em>
+                            Trump detects the political leaning of news articles and media outlets, and revolutionizes
+                            the way we approach media profiling.
+                        </em>
+                    </p> -->
+
+                </div>
+
+
+            </div>
+            <!-- <div class="col-md-2">
+                
+                <img class="masthead-avatar mb-5" src="{{ url_for('static', filename='assets/img/portfolio/2.png')}}"
+                    alt="..." style="border-bottom-left-radius: 50px;" />
+            </div> -->
+
+
+        </div>
+    </div>
+</div> 
+</div>
+    <div class="container">
+        <div class="container">
+            <div class="row" style="margin-top: 10px; margin-bottom: 35px;">
+
+                <!-- <div class="col-sm">
+                    <button type="button" class="btn btn-outline-info btn-lg btn-block" data-toggle="collapse"
+                        data-target="#predict-category" aria-expanded="false" aria-controls="predict-category"
+                        style="color: black">Predict bias of Article</button>
+                </div>
+
+                <div class="col-sm">
+                    <button type="button" class="btn btn-outline-info btn-lg btn-block"data-toggle="collapse"
+                    data-target="#predict-media" aria-expanded="false" aria-controls="predict-media"
+                     style="color: black">Predict bias of Media</button>
+                </div>
+
+                <div class="col-sm">
+                    <button type="button" class="btn btn-outline-info btn-lg btn-block" 
+                    style="color: black">Predict Media Profile</button>
+                </div> -->
+
+                <div class="col-sm">
+                    <button type="button" class="btn btn-outline-info btn-lg btn-block" data-toggle="collapse"
+                        data-target="#predict-category" aria-expanded="false" aria-controls="predict-category"
+                        style="color: black">Predict bias of Article</button>
+                </div>
+
+                <div class="col-sm">
+                    <button type="button" class="btn btn-outline-info btn-lg btn-block"data-toggle="collapse"
+                    data-target="#predict-media" aria-expanded="false" aria-controls="predict-media"
+                     style="color: black">Predict bias of Media</button>
+                </div>
+
+                <div class="col-sm">
+                    <button type="button" class="btn btn-outline-info btn-lg btn-block" 
+                    style="color: black">Predict Media Profile</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="collapse" id="predict-category">
+            <h2 style="margin-top: 20px; margin-bottom: 20px"
+                class="page-section-heading text-center text-uppercase text-secondary mb-0">Enter the text of the
+                article
+            </h2>
+
+            <div class="form-floating mb-3">
+                <input class="form-control" type="text" placeholder="Enter your name..." data-sb-validations="required"
+                    id="article-title" />
+                <label for="name">Title of article</label>
+                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+            </div>
+            <div class="form-group" style="margin-top: 20px;">
+
+
+                <textarea class="form-control" id="article-text" rows="10"
+                    placeholder="Content of the article"></textarea>
+
+            </div>
+            <button onclick="predictCategory('{{category_url}}')" type="button"
+                class="btn btn-primary btn-lg btn-block">Get
+                result</button>
+
+
+
+            <div class="container" style="margin-top: 20px; font-size:xx-large">
+                <div class="col sm">
+
+                    <div id="result" style="text-align: center;">
+                        <p> Our model thinks that is <b id="input"></b> article
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PREDICT BY MEDIA -->
+
+        <div class="collapse" id="predict-media">
+            <h2 style="margin-top: 20px; margin-bottom: 20px"
+                class="page-section-heading text-center text-uppercase text-secondary mb-0">Enter the text of the
+                article
+            </h2>
+
+            <div class="form-floating mb-3">
+                <input class="form-control" type="text" placeholder="Enter your name..." data-sb-validations="required"
+                    id="article-title" />
+                <label for="name">Title of article</label>
+                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+            </div>
+            <button onclick="predictCategory('{{category_url}}')" type="button"
+                class="btn btn-primary btn-lg btn-block">Get
+                result</button>
+
+
+
+            <div class="container" style="margin-top: 20px; font-size:xx-large">
+                <div class="col sm">
+
+                    <div id="result" style="text-align: center;">
+                        <p> Our model thinks that is <b id="input"></b> article
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white" style="margin-top: 150px;">
+        <div class="container"><small>Copyright &copy;</small></div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            HidePredict()
+        });
+        function HidePredict() {
+            $("#result").hide();
+        }
+
+    </script>
+
+    <!-- Bootstrap core JS-->
+    <script src="{{ url_for('static', filename='js/requests.js')}}"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="{{ url_for('static', filename='js/scripts.js')}}"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
+</body>
+
+</html>
