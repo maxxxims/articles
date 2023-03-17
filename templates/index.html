@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+
+    <!-- <style>
+        header{
+            background: url(../static/assets/img/bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    </style> -->
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
@@ -29,7 +39,7 @@
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
         <div class="container">
             <img class="masthead-logo" width="50" height="50"
-                src="{{ url_for('static', filename='assets/img/portfolio/CatBoostLogo.png')}}" alt="..." />
+                src="{{ url_for('static', filename='assets/img/portfolio/log.png')}}" alt="..." />
             <a class="navbar-brand" href="#page-top" style="margin-left: 10px">TRUMP</a>
             <!-- CatBoostLogo.png -->
             <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
@@ -77,18 +87,21 @@
                 <!-- Masthead Subheading-->
                 <div style="text-align: left; font-size: large; width: 87%;">
                     <span>
-                        Uncover the truth behind the headlines with our cutting-edge technology platform Trump.
+                        Uncover the truth behind the headlines with our cutting-edge technological platform Trump.
                     </span>
                     <p>
-                        Trump detects the political leaning of news articles and media outlets, and revolutionizes
-                        the way we approach media profiling. 
+                        Trump detects the political leaning of news articles and media outlets and revolutionizes the way how we approach media profiling.
                     </p>
+
+                     
+
+ 
                     <!-- <p class="masthead-subheading font-weight-light mb-0">
-                        
+
                         <em class="masthead-subheading font-weight-light mb-0">Uncover the truth behind the headlines with our cutting-edge technology platform Trump.
                         </em>
 
-                    </p>    
+                    </p>
                     <p class="masthead-subheading font-weight-light"> <em>
                             Trump detects the political leaning of news articles and media outlets, and revolutionizes
                             the way we approach media profiling.
@@ -117,17 +130,17 @@
                 <div class="col-sm">
                     <button type="button" class="btn btn-outline-info btn-lg btn-block" data-toggle="collapse"
                         data-target="#predict-category" aria-expanded="false" aria-controls="predict-category"
-                        style="color: black">Predict by article</button>
+                        style="color: black">Predict bias of Article</button>
                 </div>
 
                 <div class="col-sm">
-                    <button type="button" class="btn btn-outline-info btn-lg btn-block" style="color: black">Predict by
-                        media</button>
+                    <button type="button" class="btn btn-outline-info btn-lg btn-block"
+                     style="color: black">Predict bias of Media</button>
                 </div>
 
                 <div class="col-sm">
-                    <button type="button" class="btn btn-outline-info btn-lg btn-block" style="color: black">Predict
-                        credibility</button>
+                    <button type="button" class="btn btn-outline-info btn-lg btn-block" 
+                    style="color: black">Predict Media Profile</button>
                 </div>
 
             </div>
@@ -175,7 +188,7 @@
     </div>
 
     <!-- Copyright Section-->
-    <div class="copyright py-4 text-center text-white" style="margin-top: 50px;">
+    <div class="copyright py-4 text-center text-white" style="margin-top: 150px;">
         <div class="container"><small>Copyright &copy;</small></div>
     </div>
 

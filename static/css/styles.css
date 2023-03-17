@@ -30,7 +30,12 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 211,211,211;
+
+  /* background color */
+
+  --bs-primary-rgb: 211,100,211;
+
+
   --bs-secondary-rgb: #0061f2;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -65,7 +70,6 @@
     scroll-behavior: smooth;
   }
 }
-
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -4077,7 +4081,8 @@ textarea.form-control-lg {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
-  background-color: transparent;
+  /* прозрачная строка состояния */
+  background-color: transparent;         
   border: 0.125rem solid transparent;
   border-radius: 0.5rem;
   transition: box-shadow 0.15s ease-in-out;
@@ -7796,6 +7801,8 @@ textarea.form-control-lg {
   --bs-text-opacity: 1;
 }
 
+
+/* background */
 .bg-primary {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
@@ -11511,3 +11518,4 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
