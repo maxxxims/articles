@@ -1,0 +1,7 @@
+{
+    "DOMAIN"        : "http://127.0.0.1:8000",
+    "PORT"          : 8000,
+    "PATH_TO_MODEL" : "model/catboost_model",
+    "PATH_TO_CSV"   : "model/data_news.csv"
+
+}

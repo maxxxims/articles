@@ -2,10 +2,17 @@
 <html lang="en">
 
 <head>
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
     <style>
 
         :root {
-            --height-header: 85vh;
+            --height-header: 75vh;
         }
 
         .header-container{
@@ -37,17 +44,35 @@
             color: white;
         }
 
+        #left{
+            text-align: left;
+        }
+
+        #right{
+            text-align: right;
+        }
+
+        #font{
+            color: white;
+            font-family: Lilita One;
+        }
+
+        #font-brand{
+            color: white;
+            font-family: Lilita One;
+        }
+
     </style>
-            <!-- /*  Структура:  */   -->
-        
-      
+
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Trump</title>
-    <!-- Favicon-->
+
+    
+    <!-- Favicon--> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -64,95 +89,37 @@
 </head>
 
 <body id="page-top">
-
+    <div class="header-container">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav"
+           >
+            <!-- style="background: rgb(0, 94, 130); width: 100%;" -->
+
         <div class="container">
+            
             <img class="masthead-logo" width="50" height="50"
-                src="{{ url_for('static', filename='assets/img/portfolio/log.png')}}" alt="..." />
-            <a class="navbar-brand" href="#page-top" style="margin-left: 10px">TRUMP</a>
+                src="{{ url_for('static', filename='assets/img/portfolio/logo_white.png')}}" alt="..." />
+            <a class="navbar-brand" href="#page-top" style="margin-left: 10px; font-family: Lilita One; text-transform: none; font-size: 280%" 
+            style="color: white">TRUMP</a>
 
             
-            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
-                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
+            
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Go
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#page-top" style="color: white">Go
                             up</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">By
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                        data-toggle="collapse" aria-expanded="false" href="#predict-category" style="color: white" >By
                             text</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">By
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" 
+                        data-toggle="collapse" aria-expanded="false" href="#predict-media" style="color: white">By
                             link</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- <header class="masthead bg-primary text-white text-center">
-        <div class="container d-flex align-items-center">
-
-
-
-            <div class="col-lg-8">
-                <div style="text-align: center; margin-bottom: 20px;">
-                    <h1 class="masthead-heading text-uppercase mb-0">Trump</h1>
-                </div> -->
-
-                <!-- Icon Divider-->
-                <!-- <div class="divider-custom divider-light">
-                      <div class="divider-custom-line"></div>
-                      <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                      <div class="divider-custom-line"></div>
-                  </div> -->
-
-                <!-- <div class="divider-custom">
-                      <div class="divider-custom-line"></div>
-                      <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                      <div class="divider-custom-line"></div>
-                  </div> -->
-
-                <!-- Masthead Subheading-->
-                <!-- <div style="text-align: left; font-size: large; width: 87%;">
-                    <span>
-                        Uncover the truth behind the headlines with our cutting-edge technological platform Trump.
-                    </span>
-                    <p>
-                        Trump detects the political leaning of news articles and media outlets and revolutionizes the way how we approach media profiling.
-                    </p>
-
-                      -->
-
- 
-                    <!-- <p class="masthead-subheading font-weight-light mb-0">
-
-                        <em class="masthead-subheading font-weight-light mb-0">Uncover the truth behind the headlines with our cutting-edge technology platform Trump.
-                        </em>
-
-                    </p>
-                    <p class="masthead-subheading font-weight-light"> <em>
-                            Trump detects the political leaning of news articles and media outlets, and revolutionizes
-                            the way we approach media profiling.
-                        </em>
-                    </p> -->
-
-                <!-- </div> -->
-
-<!-- 
-            </div>
-            <div class="col-md-2"> -->
-                <!-- <img class="masthead-avatar mb-5" src="assets/img/portfolio/article.svg" alt="..." /> -->
-                <!-- <img class="masthead-avatar mb-5" src="{{ url_for('static', filename='assets/img/portfolio/2.png')}}"
-                    alt="..." style="border-bottom-left-radius: 50px;" /> -->
-            <!-- </div>
-
-
-        </div>
-    </header> -->
-    <div class="header-container">
+    
         
     <div class="header-photo">
 
@@ -164,56 +131,24 @@
 
 
             <div class="col-lg-12">
-                <div style="text-align: center; margin-bottom: 20px;">
-                    <h1 class="masthead-heading text-uppercase mb-0" id="text">Trump</h1>
+                <div style="text-align: center; margin-bottom: 20px; text-shadow: 1px 2px 2px #323131">
+                    <h1 class="masthead-heading text-uppercase mb-0" id="font-brand" style="font-size: 500%;">Trump</h1>
                 </div>
 
-                <!-- Icon Divider-->
-                <!-- <div class="divider-custom divider-light">
-                      <div class="divider-custom-line"></div>
-                      <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                      <div class="divider-custom-line"></div>
-                  </div> -->
-
-                <!-- <div class="divider-custom">
-                      <div class="divider-custom-line"></div>
-                      <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                      <div class="divider-custom-line"></div>
-                  </div> -->
 
                 <!-- Masthead Subheading-->
-                <div style="text-align: center; font-size: 155%;" id="text">
-                    <span>
+                <div style="text-align: center; font-size: 160%; text-shadow: 1px 2px 2px #323131;" id="text">
+                    <span id="font">
                         Uncover the truth behind the headlines with our cutting-edge technological platform Trump.
                     </span>
-                    <p>
+                    <p id="font">
                         Trump detects the political leaning of news articles and media outlets and revolutionizes the way how we approach media profiling.
                     </p>
-
-                     
-
- 
-                    <!-- <p class="masthead-subheading font-weight-light mb-0">
-
-                        <em class="masthead-subheading font-weight-light mb-0">Uncover the truth behind the headlines with our cutting-edge technology platform Trump.
-                        </em>
-
-                    </p>
-                    <p class="masthead-subheading font-weight-light"> <em>
-                            Trump detects the political leaning of news articles and media outlets, and revolutionizes
-                            the way we approach media profiling.
-                        </em>
-                    </p> -->
 
                 </div>
 
 
             </div>
-            <!-- <div class="col-md-2">
-                
-                <img class="masthead-avatar mb-5" src="{{ url_for('static', filename='assets/img/portfolio/2.png')}}"
-                    alt="..." style="border-bottom-left-radius: 50px;" />
-            </div> -->
 
 
         </div>
@@ -223,39 +158,23 @@
     <div class="container">
         <div class="container">
             <div class="row" style="margin-top: 10px; margin-bottom: 35px;">
-
-                <!-- <div class="col-sm">
+                
+                <div class="col-sm">
                     <button type="button" class="btn btn-outline-info btn-lg btn-block" data-toggle="collapse"
-                        data-target="#predict-category" aria-expanded="false" aria-controls="predict-category"
+                        data-target="#predict-category" aria-expanded="false" onclick="openFirst()"
                         style="color: black">Predict bias of Article</button>
                 </div>
 
                 <div class="col-sm">
-                    <button type="button" class="btn btn-outline-info btn-lg btn-block"data-toggle="collapse"
-                    data-target="#predict-media" aria-expanded="false" aria-controls="predict-media"
+                    <button type="button" class="btn btn-outline-info btn-lg btn-block" data-toggle="collapse"
+                    data-target="#predict-media" aria-expanded="false" 
                      style="color: black">Predict bias of Media</button>
                 </div>
-
-                <div class="col-sm">
-                    <button type="button" class="btn btn-outline-info btn-lg btn-block" 
-                    style="color: black">Predict Media Profile</button>
-                </div> -->
 
                 <div class="col-sm">
                     <button type="button" class="btn btn-outline-info btn-lg btn-block" data-toggle="collapse"
-                        data-target="#predict-category" aria-expanded="false" aria-controls="predict-category"
-                        style="color: black">Predict bias of Article</button>
-                </div>
-
-                <div class="col-sm">
-                    <button type="button" class="btn btn-outline-info btn-lg btn-block"data-toggle="collapse"
-                    data-target="#predict-media" aria-expanded="false" aria-controls="predict-media"
-                     style="color: black">Predict bias of Media</button>
-                </div>
-
-                <div class="col-sm">
-                    <button type="button" class="btn btn-outline-info btn-lg btn-block" 
-                    style="color: black">Predict Media Profile</button>
+                    data-target="#media-profile" aria-expanded="false" 
+                    style="color: black">Media Profile</button>
                 </div>
 
             </div>
@@ -304,28 +223,26 @@
 
         <div class="collapse" id="predict-media">
             <h2 style="margin-top: 20px; margin-bottom: 20px"
-                class="page-section-heading text-center text-uppercase text-secondary mb-0">Enter the text of the
-                article
+                class="page-section-heading text-center text-uppercase text-secondary mb-0">Enter Media website
             </h2>
 
             <div class="form-floating mb-3">
                 <input class="form-control" type="text" placeholder="Enter your name..." data-sb-validations="required"
-                    id="article-title" />
-                <label for="name">Title of article</label>
+                    id="media-1" />
+
+                <label for="name">Media website</label>
                 <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
             </div>
-            <button onclick="predictCategory('{{category_url}}')" type="button"
-                class="btn btn-primary btn-lg btn-block">Get
-                result</button>
-
+            <button onclick="predictMedia('{{media_url}}')" type="button"
+                class="btn btn-primary btn-lg btn-block">Get result</button>
 
 
             <div class="container" style="margin-top: 20px; font-size:xx-large">
                 <div class="col sm">
 
-                    <div id="result" style="text-align: center;">
-                        <p> Our model thinks that is <b id="input"></b> article
-                        </p>
+                    <div id="result-2" style="text-align: center;">
+                        <p id="input-2">  </p>
+                        
                     </div>
                 </div>
 
@@ -334,12 +251,51 @@
         </div>
 
 
+        <!-- MEDIA PROFILE -->
+        
+        <div class="collapse" id="media-profile">
+            <h2 style="margin-top: 20px; margin-bottom: 20px"
+                class="page-section-heading text-center text-uppercase text-secondary mb-0">Enter Media website
+            </h2>
+
+            <div class="form-floating mb-3">
+                <input class="form-control" type="text" placeholder="Enter Media website..." data-sb-validations="required"
+                    id="media-2" />
+
+                <label for="name">Media website</label>
+                <div class="invalid-feedback" data-sb-feedback="name:required">Website is required.</div>
+            </div>
+            <button onclick="predictMediaProfile('{{media_profile_url}}')" type="button"
+                class="btn btn-primary btn-lg btn-block">Get result</button>
+
+
+            <div class="container" style="margin-top: 60px; font-size:xx-large">
+                <div class="col md-3" >
+
+                    <div id="result-3" style="text-align: center;">
+                        <p id="input-3">  </p>
+
+                        <table class="table table-bordered" id="input-table" >
+                            
+                        </table>
+
+                        
+                        
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+
+
 
     </div>
 
     <!-- Copyright Section-->
     <div class="copyright py-4 text-center text-white" style="margin-top: 150px;">
-        <div class="container"><small>Copyright &copy;</small></div>
+        <div class="container"><small>TRUMP copyright &copy;</small></div>
     </div>
 
     <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
@@ -350,9 +306,25 @@
         });
         function HidePredict() {
             $("#result").hide();
+            $("#result-2").hide();
         }
-
+        
+        
     </script>
+
+    <script>
+        
+        var $buttonFirst  = $('#predict-category');
+        var $buttonSecond = $('#predict-media');
+
+        function openFirst(){
+            $buttonSecond.collapse('hide');
+            console.log("1");
+        }
+    </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     <!-- Bootstrap core JS-->
     <script src="{{ url_for('static', filename='js/requests.js')}}"> </script>
@@ -370,7 +342,6 @@
         crossorigin="anonymous"></script>
 
 
-    <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
 </body>
 
 </html>
