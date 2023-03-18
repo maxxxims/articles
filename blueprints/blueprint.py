@@ -1,5 +1,5 @@
-from flask import Blueprint, render_template, abort, request
-from model.model import CLASSIFIER, test
+from flask import Blueprint, render_template, request
+from model.model import CLASSIFIER
 import json
 
 
