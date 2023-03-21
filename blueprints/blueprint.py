@@ -37,7 +37,7 @@ def index():
 @mainpage.route("/predict_category", methods=["POST"])
 def predict():
     r = request.json
-    category, proba = model.predict(r.get('title', ' '), r.get('text', ' '))
+    category, proba = model.predict(r.get('text', ' '), r.get('title', ' '))
     return {'status': 200, 'category': category, 'proba': proba}
 
 
